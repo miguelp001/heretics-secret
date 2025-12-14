@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Heretic's Secret</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <canvas id="snow-canvas"></canvas>
+
+  <div id="app">
+    <header class="title-screen fade-in">
+      <h1>The Heretic's Secret</h1>
+      <p class="subtitle">A Tale of Nightsdeep</p>
+      <div class="scroll-indicator">↓</div>
+      <button id="audio-btn" class="audio-toggle">ENABLE AUDIO</button>
+      <button id="reset-btn" class="hidden">Restart Story</button>
+    </header>
+
+    <main>
+      <!-- Part I -->
+      <section class="chapter" id="chapter-1">
+        <div class="chapter-content relative">
+          <div id="snow-game-container" class="game-overlay">
+            <canvas id="scratch-canvas"></canvas>
+            <div class="game-instruction">Clear the snow to reveal the path...</div>
+          </div>
+          <div class="chapter-text hidden-content">
+            <h2>I. The White Cage</h2>
+            <img src="/chapter1.png" alt="Abstract cage of ice" class="chapter-art">
+            <p>The blizzard didn’t just hide the world; it erased it. The snow piled against the timber walls of the
+              village near the Eastren Wood, turning the settlement into a tomb shared by the living.</p>
+            <p class="interactive-text"
+              data-reveal="In this silence, the only sound was the wind and the snapping of frozen branches.">...</p>
+
+            <p>Elara stood over the red ruin that used to be Penelope. The baker lay on the grey snow, a bundle of torn
+              rags and silence.</p>
+
+            <p>"Wolf," Jarek said. The village hunter stood like a statue carved from worry. "Starving. Desperate. I’ll
+              track it."</p>
+
+            <p>Elara knelt. She ignored the gore and looked at the story written in the snow. The drag marks were deep,
+              heavy furrows.</p>
+
+            <p>"The tracks don't leave, Jarek," Elara said, her voice lost in the wind. "They go into the village. Not
+              away."</p>
+
+            <p>Jarek flinched. It was a small thing, a crack in his stone mask. <span class="highlight">He was hiding
+                something.</span></p>
+
+            <p>Rolf stepped into the lantern light. The priest of the new faith wore his suspicion like a second skin.
+              He
+              looked at the corpse, then at Elara.</p>
+
+            <p>"The Old Gods have left us to the dark," Rolf spat, his voice sharp enough to cut the cold. "Perhaps the
+              Lady in Red has a secret to stitch this meat back together?"</p>
+
+            <p>Elara touched the symbol of the red snake hidden beneath her cloak. Holun, who fills men with knowledge
+              and
+              hollows them out, does not offer comfort. She offers truth, and the truth here smelled of copper and
+              betrayal. The beast was already inside the walls.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part II -->
+      <section class="chapter hidden" id="chapter-2">
+        <div class="chapter-content relative">
+          <div id="lock-game-container" class="game-overlay">
+            <div class="lock-mechanism">
+              <div class="lock-pick-area">
+                <div class="pin" data-index="0"></div>
+                <div class="pin" data-index="1"></div>
+                <div class="pin" data-index="2"></div>
+              </div>
+              <div class="lock-cylinder"></div>
+            </div>
+            <div class="game-instruction">Pick the lock. Click the pins in order when they glow.</div>
+          </div>
+          <div class="chapter-text hidden-content">
+            <h2>II. The Beast in the Hearth</h2>
+            <img src="/chapter2.png" alt="Abstract wolf in fire" class="chapter-art">
+            <p>The attacks did not stop. Two nights later, a guard lost an arm to the shadows. Fear is a cold thing, and
+              it spread through the village faster than the frost. Rolf fed it. He preached in the square, demanding the
+              village purge itself of the "unclean."</p>
+
+            <p>Elara followed the silence to Jarek's cabin.</p>
+
+            <p>She didn't knock. She slipped the latch—a talent granted to those who serve the goddess of secrets—and
+              stepped inside. The cabin smelled of wet fur, sickness, and old blood.</p>
+
+            <p>Livia lay strapped to the bed. Her skin was a tapestry of bruises; her bones shifted and ground together
+              as
+              the curse tried to reshape her form. Lycanthropy is not a disease; it is the rage of the soul given claws.
+              It is the man screaming inside the wolf.</p>
+
+            <p>Jarek sat in the corner. He held a silver knife, useless in his shaking hand. He was weeping.</p>
+
+            <p>"She didn't mean to," Jarek whispered. "It was in the woods. A month ago. We thought it was just a bite."
+            </p>
+
+            <p>"You're feeding her," Elara said. "Dragging the bodies back here."</p>
+
+            <p>"I can't kill her, Elara. She's my wife."</p>
+
+            <p>Elara looked at Livia. The woman's eyes were yellow, wild and terrified. The beast was winning. This was
+              not a problem of medicine; it was a problem of the spirit.</p>
+
+            <p>"There is a way," Elara said. "An Old Rite. Dangerous. It requires a price."</p>
+
+            <p>"Anything."</p>
+
+            <p>"The heart of the sire," Elara said. "The thing that turned her."</p>
+
+            <p>Jarek went to a heavy chest and threw it open. Inside, floating in a jar of brine, sat a heart the size
+              of
+              a fist.</p>
+
+            <p>"I killed it the night she was bitten," Jarek said. "I kept it. I don't know why."</p>
+
+            <p>"Because the gods love a tragedy," Elara muttered. "Prepare her. We do it tonight."</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part III -->
+      <section class="chapter hidden" id="chapter-3">
+        <div class="chapter-content relative">
+          <div id="cut-game-container" class="game-overlay">
+            <div class="heart-target">
+              <img src="/chapter3.png" class="heart-img-game" draggable="false">
+              <svg class="cut-line-svg" viewBox="0 0 200 200">
+                <path id="cut-path" d="M 20 100 Q 100 20 180 100" stroke="rgba(255,255,255,0.5)" stroke-width="4"
+                  fill="none" stroke-dasharray="10, 5" />
+              </svg>
+            </div>
+            <div class="game-instruction">Slice the heart (Drag across the line).</div>
+          </div>
+          <div class="chapter-text hidden-content">
+            <h2>III. The Blood Price</h2>
+            <img src="/chapter3.png" alt="Abstract bleeding heart" class="chapter-art">
+            <p>Magic in Nightsdeep is a transaction. You give a piece of yourself to change the world. Elara drew the
+              runes of Holun on her skin with ash. They burned, a sharp heat against the cold.</p>
+            <p class="chant">The Claw. Calm the Beast.</p>
+
+            <p>Livia thrashed against the ropes. The full moon pulled at the tide of her blood.</p>
+
+            <p>"Hold her," Elara commanded.</p>
+
+            <p>She sliced the sire's heart. Black blood oozed out. She began the chant, a low sound that grated against
+              the silence. The air in the room grew heavy, the shadows stretching and twisting.</p>
+
+            <p>Outside, the snow crunched under heavy boots.</p>
+
+            <p>"Open up!" Rolf’s voice cracked like a whip. "We know what you harbor, Hunter! We know the witch is with
+              you!"</p>
+
+            <p>Jarek looked at the door, then at Livia. "Finish it," he snarled. He grabbed his axe.</p>
+
+            <p>The door splintered. Rolf did not come alone; he brought the fear of the village with him. They carried
+              torches—fire, the only thing the desperate trust.</p>
+
+            <p>"Heretic!" Rolf pointed a trembling finger at Elara.</p>
+
+            <p>Livia roared. It was a sound of wet tearing. The wolf pushed against the skin.</p>
+
+            <p>Elara ignored the door. She shoved the heart-matter into Livia’s mouth and pressed her hands to the
+              woman’s
+              chest. She pushed her will into the sickness. The Claw. She visualized the beast retreating, the human
+              spirit reclaiming its vessel.</p>
+
+            <p>Jarek swung the axe, striking the doorframe. "Back! All of you!"</p>
+
+            <p>"Burn them!" Rolf shrieked.</p>
+
+            <p>The mob hesitated. They saw Livia. She wasn't a monster; she was breaking. Her fur receded, her snout
+              retracted with the sickening pop of cartilage moving back into place. The horror of the change reversed
+              was
+              worse than the change itself.</p>
+
+            <p>Elara slumped. The rune on her arm vanished, leaving raw, red skin.</p>
+
+            <p>Livia gasped. She was naked, covered in sweat and blood, but her eyes were brown. Human.</p>
+
+            <p>The silence in the room was absolute. The mob stared. They had come to kill a monster; they found a
+              miracle
+              they didn't understand. Rolf’s power crumbled in the face of the truth.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part IV -->
+      <section class="chapter hidden" id="chapter-4">
+        <div class="chapter-content">
+          <h2>IV. The Long Winter</h2>
+          <img src="/chapter4.png" alt="Abstract figure in snow" class="chapter-art">
+          <p>Elara packed her satchel. The village was quiet. The blizzard had broken, leaving the world scoured clean
+            and empty.</p>
+
+          <p>Livia was alive. She would have nightmares. She would ache when the moon was full. But she was herself.</p>
+
+          <p>Jarek stood by the door. "They let us be," he said. "For now."</p>
+
+          <p>"Rolf has lost them," Elara said. "But fear remembers. And kindness is forgotten quickly."</p>
+
+          <p>"We're leaving," Jarek said. "We can't stay here. Not after they saw..."</p>
+
+          <p>"Go," Elara said. "The road is hard, but staying is death."</p>
+
+          <p>Elara stepped out into the snow. The cold bit at her exposed face. She looked back at the village. It
+            looked peaceful, buried under the white drift. It was a lie.</p>
+
+          <p>She adjusted her cloak and began walking toward the tree line. She had cheated the dark this time, but in
+            Nightsdeep, the dark always waits for you to stumble. You just try to keep walking.</p>
+
+
+        </div>
+      </section>
+      <div id="whiteout-overlay"></div>
+      <div class="end-fin">
+        <p>FIN</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Interactive Art by Antigravity</p>
+    </footer>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
